@@ -15,7 +15,7 @@ class String
   end
 
   def count_sentences
-    var = self.split(/.!?/).select { |p| p.length > 1}
+    var = self.split(/.!?/).select { |p| p.length > 1 }
     binding.pry
   end
 end
