@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-    self.split(/[.!?]/).count { |parts| parts.length > 1 }
+    self.split(/[.!?]/).collect { |parts| parts.length > 1 }.compact.count
   end
 end
